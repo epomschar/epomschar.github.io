@@ -1,4 +1,4 @@
 epomschar.github.io
-===================
+------------------
 
-CV designed as Google search page
+CV designed as a Google search page
