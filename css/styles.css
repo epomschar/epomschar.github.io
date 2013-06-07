@@ -154,8 +154,13 @@ ul {
 .bg-color02 {
 	background-color: #fff;
 }
+
 .bg-color03 {
 	background-color: #2d2d2d;
+}
+
+.bg-color-f2f2f2 {
+    background-color: #f2f2f2;
 }
 
 .strong {
@@ -210,7 +215,6 @@ ul {
 	box-shadow: 0 2px 4px rgba(0,0,0,.2);
 	width: 90px;
 	border-top: none;
-	z-index: 10;
 }
 
 .main-nav-sub-nav li {
@@ -252,9 +256,15 @@ li.subnav-li-active {
 }
 
 .sub-nav-02 {
+    min-width: 1180px;
     height: 40px;
-    border-top: 1px solid #222;
     clear: left;
+    border-top: 1px solid #e4e4e4;
+    float: left;
+}
+
+.sub-nav-02 li {
+    cursor: default;
 }
 
 li span {
@@ -520,7 +530,6 @@ article span {
 
 .pagination {
     float: left;
-    margin-bottom: 20px;
     margin: 30px 0 20px 100px;
 }
 
