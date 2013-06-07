@@ -16,16 +16,6 @@ h2 {
     margin: 20px 0 10px;
 }
 
-h2.color07 {
-	font-weight: normal;
-	font-size: 16px;
-	text-decoration: underline;
-}
-
-h2.color07:hover {
-	text-decoration: none;
-}
-
 h3 {
     font-size: 14px;
     font-weight: bold;
@@ -89,7 +79,7 @@ ul {
 }
 
 .employment article {
-    width: 220px;
+    width: 230px;
     float: left;
     margin-right: 55px;
     margin-bottom: 20px;
@@ -596,4 +586,9 @@ span.next {
 .icon {
     float: left;
     margin: -3px 10px 0 -3px;
+}
+
+.more-text {
+    font-style: inherit;
+    display: none;
 }
