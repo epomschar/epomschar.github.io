@@ -607,3 +607,31 @@ span.next {
 .clear-left {
     clear: left;
 }
+
+.ie7 li {
+    float: left;
+}
+
+.ie7 .related-search {
+    float: none;
+}
+
+.ie7 .sub-button01 span {
+    top: -4px;
+}
+
+.ie7 .rotate {
+    position: static;
+}
+
+.ie7 .skills li {
+    float: none;
+}
+
+.ie7 .pagination {
+    float: none;
+}
+
+ie7 p span {
+    font-style: inherit;
+}
