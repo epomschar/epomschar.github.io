@@ -297,10 +297,6 @@ li.dropdown02 {
 	display: block;
 }
 
-.hidden {
-	display: none;
-}
-
 .search {
 	background-color: #f1f1f1;
 	overflow: hidden;  
@@ -591,4 +587,19 @@ span.next {
 .more-text {
     font-style: inherit;
     display: none;
+}
+
+.long-text {
+    font-style: inherit;
+}
+
+.more {
+    display: inline;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/*** kepp as last ******************/
+.hidden {
+	display: none;
 }
