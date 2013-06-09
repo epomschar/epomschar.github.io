@@ -61,7 +61,7 @@ $(document).ready(function () {
     });
 
     $paragraph.each(function () {
-        truncateParagraph($(this), 90);
+        truncateParagraph($(this), 66);
     });
 
 });

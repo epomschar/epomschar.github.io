@@ -13,7 +13,7 @@ h1:hover {
 h2 {
     color: #222;
     font-weight: bold;
-    margin: 20px 0 10px;
+    margin: 20px 0 2px;
 }
 
 h3 {
@@ -79,10 +79,9 @@ ul {
 }
 
 .employment article {
-    width: 230px;
+    width: 243px;
     float: left;
-    margin-right: 55px;
-    margin-bottom: 20px;
+    margin-right: 40px;
 }
 
 .arrow-down {
@@ -430,8 +429,8 @@ button span {
 p.result {
     color: #999;
     font-size: 13px;
-    line-height: 35px;
-    margin-bottom: 11px;
+    line-height: 24px;
+    margin-bottom: 17px;
 }
 
 .contact {
@@ -496,15 +495,15 @@ article span {
 	width: 40%;
 	float: left;
     text-decoration: underline;
-    line-height: 25px
-}
+    
+	line-height: 21px;}
 
 .related-search li:hover {
     text-decoration: none;
 }
 
 .related-search span {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display: block;
 }
 
