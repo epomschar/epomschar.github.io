@@ -34,15 +34,13 @@ $(document).ready(function () {
     //text truncate
     function truncateParagraph(element, textLength) {
 
-        var maxLength = textLength;
-
         element.each(function () {
 
-            if (element.text().length > maxLength) {
+            if (element.text().length > textLength) {
 
-                var short_text = $(this).text().substring(0, maxLength),
-                //short_text = short_text.substring(0, Math.min(short_text.length, short_text.lastIndexOf(" "))),
-                long_text = $(this).text().substring(maxLength);
+                var short_text = $(this).text().substring(0, textLength),
+                short_text = short_text.substring(0, Math.min(short_text.length, short_text.lastIndexOf(" "))),
+                long_text = $(this).text().substring(short_text.length);
                               
 				function replaceLinkString(replaceStr){							
 					return long_text = long_text.replace(replaceStr,'<a href="http://' + replaceStr +'">' + replaceStr + '</a>'); 
