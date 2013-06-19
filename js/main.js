@@ -41,8 +41,16 @@ $(document).ready(function () {
             if (element.text().length > maxLength) {
 
                 var short_text = $(this).text().substring(0, maxLength),
-                short_text = short_text.substring(0, Math.min(short_text.length, short_text.lastIndexOf(" "))),
+                //short_text = short_text.substring(0, Math.min(short_text.length, short_text.lastIndexOf(" "))),
                 long_text = $(this).text().substring(maxLength);
+                              
+				function replaceLinkString(replaceStr){							
+					return long_text = long_text.replace(replaceStr,'<a href="http://' + replaceStr +'">' + replaceStr + '</a>'); 
+				}
+				
+				replaceLinkString('magazine.motilo.com');
+				replaceLinkString('www.egpr.com.au');
+				replaceLinkString('www.idc-ei.com')
 
                 element.html(short_text +
                                         "<a href='#' class='more'> [ ... ]</a>" +
@@ -63,5 +71,6 @@ $(document).ready(function () {
     $paragraph.each(function () {
         truncateParagraph($(this), 66);
     });
+        
 
 });
