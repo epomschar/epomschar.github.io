@@ -464,7 +464,6 @@ article span {
 }
 
 .rotate {
-
     /* Safari */
     -webkit-transform: rotate(-90deg) translateY(-69px) translateX(-22px);
     /* Firefox */
@@ -605,7 +604,11 @@ span.next {
     font-size: 13px;
 }
 
-/*** kepp as last ******************/
+.current a {
+	display: inline;
+}
+
+/*** keep as last ******************/
 .hidden {
 	display: none;
 }
