@@ -59,6 +59,7 @@ $(document).ready(function () {
         $('.more').click(function (event) {
             event.preventDefault();
             $(this).addClass('hidden').next().removeClass('hidden');
+			$(this).parent().parent().css({'min-height':'210px'});
         });
     }
 
