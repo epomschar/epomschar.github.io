@@ -79,7 +79,7 @@ ul {
 }
 
 .employment article {
-    width: 243px;
+    /*width: 243px;*/
     float: left;
     margin-right: 40px;
 }
@@ -334,8 +334,7 @@ form input {
 }
 
 form input:focus {
-	/*outline: none;*/
-	
+	/*outline: none;*/	
 }
 
 form button {
@@ -450,6 +449,10 @@ p.result {
     float: left;
 }
 
+.bottom-box {
+    margin-bottom: 20px;
+}
+
 article a {
     font-size: 16px;
     text-decoration: underline;
@@ -461,6 +464,19 @@ article a {
 article span {
     font-style: italic;
     font-size: 12px;
+}
+
+article.last {
+    border-bottom: 1px solid #777;
+    margin-bottom: 20px;
+}
+
+p a {
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 0;
+    display: inline;
 }
 
 .rotate {
@@ -580,7 +596,7 @@ span.next {
 
 .icon {
     float: left;
-    margin: -3px 10px 0 -3px;
+    margin: -3px 10px 10px -3px;
 }
 
 .more-text {

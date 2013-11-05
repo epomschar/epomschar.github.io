@@ -3,7 +3,7 @@ $(document).ready(function () {
     var $mainnav = $('.main-nav'),
 		$subnav = $('.dropdown01 ul, .dropdown02 ul'),
 		$dropdown01 = $('.dropdown01'),
-        $paragraph = $('article p');
+        $paragraph = $('article p.truncate');
 
     //main nav hover
     $mainnav.children('li').hover(function () {
@@ -32,44 +32,44 @@ $(document).ready(function () {
     })
 
     //text truncate
-    function truncateParagraph(element, textLength) {
+   // function truncateParagraph(element, textLength) {
 
-        element.each(function () {
+   //     element.each(function () {
 
-            if (element.text().length > textLength) {
+   //         if (element.text().length > textLength) {
 
-                var short_text = $(this).text().substring(0, textLength),
-                short_text = short_text.substring(0, Math.min(short_text.length, short_text.lastIndexOf(" "))),
-                long_text = $(this).text().substring(short_text.length);
-                              
-				function replaceLinkString(replaceStr){							
-					return long_text = long_text.replace(replaceStr,'<a href="http://' + replaceStr +'">' + replaceStr + '</a>'); 
-				}
-				
-				replaceLinkString('magazine.motilo.com');
-				replaceLinkString('www.egpr.com.au');
-				replaceLinkString('www.idc-ei.com')
+   //             var short_text = $(this).text().substring(0, textLength),
+   //             short_text = short_text.substring(0, Math.min(short_text.length, short_text.lastIndexOf(" "))),
+   //             long_text = $(this).text().substring(short_text.length);
+   //                           
+			//	function replaceLinkString(replaceStr){							
+			//		return long_text = long_text.replace(replaceStr,'<a href="http://' + replaceStr +'">' + replaceStr + '</a>'); 
+			//	}
+			//	
+			//	replaceLinkString('magazine.motilo.com');
+			//	replaceLinkString('www.egpr.com.au');
+			//	replaceLinkString('www.idc-ei.com')
 
-                element.html(short_text +
-                                        "<a href='#' class='more'> [ ... ]</a>" +
-                                        "<span class='long-text hidden'>" + long_text + "</span>");
-            }
-        });
+   //             element.html(short_text +
+   //                                     "<a href='#' class='more'> [ ... ]</a>" +
+   //                                     "<span class='long-text hidden'>" + long_text + "</span>");
+   //         }
+   //     });
 
-        $('.more').click(function (event) {
-            event.preventDefault();
-            $(this).addClass('hidden').next().removeClass('hidden');
-			$(this).parent().parent().css({'min-height':'210px'});
-        });
-    }
+   //     $('.more').click(function (event) {
+   //         event.preventDefault();
+   //         $(this).addClass('hidden').next().removeClass('hidden');
+			//$(this).parent().parent().css({'min-height':'210px'});
+   //     });
+   // }
 
-    $('.intro').each(function () {
-        truncateParagraph($(this), 146);
-    });
+    //$('.intro').each(function () {
+    //    truncateParagraph($(this), 146);
+    //});
 
-    $paragraph.each(function () {
-        truncateParagraph($(this), 66);
-    });
+    //$paragraph.each(function () {
+    //    truncateParagraph($(this), 66);
+    //});
         
 
 });
