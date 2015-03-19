@@ -598,7 +598,11 @@ span.next {
     float: left;
     margin: -3px 10px 10px -3px;
 }
-
+.pdf {
+    margin-top: 5px;
+    height: 57px;
+    width: 55px;
+}
 .more-text {
     font-style: inherit;
     display: none;
